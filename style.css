@@ -1,0 +1,58 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    background-color: hsl(0, 0%, 21%);
+}
+
+h2 {
+    color: white;
+}
+
+.hero {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #97e1ff;
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.about p {
+    color: white;
+}
+
+.sys_req {
+    margin-top: 50px;
+}
+
+.sys_req ul li p {
+    color: white;
+}
+
+.downloads {
+    margin-top: 50px;
+}
+
+.downloads a {
+    color: white;
+    background-color: gray;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.versions {
+    margin-top: 50px;
+}
+
+.versions a {
+    color: white;
+    background-color: gray;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
