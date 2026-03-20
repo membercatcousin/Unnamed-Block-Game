@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://2seymashhu6x"]
+
+[ext_resource type="Script" uid="uid://caemy1jsqqr5" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="PackedScene" uid="uid://rp3pgslgysup" path="res://scenes/tooltips.tscn" id="2_g2els"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u8vuu"]
+size = Vector2(118, 247.5)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=707346117]
+script = ExtResource("1_3vyb7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1206386168]
+offset_left = -1290.0
+offset_top = -619.0
+offset_right = 1262.0
+offset_bottom = 562.0
+color = Color(0.5939066, 0.88343227, 0.99999994, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1520469385]
+position = Vector2(0, 123.75)
+shape = SubResource("RectangleShape2D_u8vuu")
+
+[node name="Camera2D" type="Camera2D" parent="CollisionShape2D" unique_id=898901410]
+position = Vector2(0, -124)
+
+[node name="ColorRect" type="ColorRect" parent="CollisionShape2D" unique_id=1961679643]
+offset_left = -59.0
+offset_top = -124.0
+offset_right = 59.0
+offset_bottom = 126.0
+color = Color(0, 0.6, 0.9647059, 1)
+
+[node name="tooltips" parent="CollisionShape2D" unique_id=495275654 instance=ExtResource("2_g2els")]
+position = Vector2(-960, -663.75)

@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://rp3pgslgysup"]
+
+[ext_resource type="Script" uid="uid://dxsp08i05yiaf" path="res://scripts/tooltips.gd" id="1_qphcm"]
+[ext_resource type="Texture2D" uid="uid://ds13ae80yjwkt" path="res://assets/textures/gui/tooltips/left_key.png" id="1_v1nbm"]
+[ext_resource type="FontFile" uid="uid://drtu3qt32e1mf" path="res://assets/fonts/font.ttf" id="2_v5584"]
+[ext_resource type="Texture2D" uid="uid://boepo2rsuvwhq" path="res://assets/textures/gui/tooltips/right_key.png" id="3_alcj5"]
+[ext_resource type="Texture2D" uid="uid://bkhl2fkneh3sf" path="res://assets/textures/gui/tooltips/left_mouse.png" id="4_alcj5"]
+[ext_resource type="Texture2D" uid="uid://uumjnnfa6ku4" path="res://assets/textures/gui/tooltips/right_mouse.png" id="5_qphcm"]
+
+[node name="tooltips" type="Node2D" unique_id=495275654]
+script = ExtResource("1_qphcm")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=660150372]
+
+[node name="left" type="TextureRect" parent="CanvasLayer" unique_id=1544713034]
+offset_left = 40.0
+offset_top = 995.0
+offset_right = 85.0
+offset_bottom = 1040.0
+texture = ExtResource("1_v1nbm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CanvasLayer/left" unique_id=1404730127]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 8.0
+offset_right = 129.0
+offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("2_v5584")
+text = "Strafe Left"
+
+[node name="right" type="TextureRect" parent="CanvasLayer/left" unique_id=768012392]
+layout_mode = 0
+offset_left = 168.0
+offset_right = 213.0
+offset_bottom = 45.0
+texture = ExtResource("3_alcj5")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CanvasLayer/left/right" unique_id=1619162150]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 8.0
+offset_right = 129.0
+offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("2_v5584")
+text = "Strafe right"
+
+[node name="left2" type="TextureRect" parent="CanvasLayer" unique_id=1113598711]
+offset_left = 1608.0
+offset_top = 995.0
+offset_right = 1653.0
+offset_bottom = 1040.0
+texture = ExtResource("4_alcj5")
+
+[node name="Label" type="Label" parent="CanvasLayer/left2" unique_id=1978999436]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 8.0
+offset_right = 129.0
+offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("2_v5584")
+text = "Break"
+
+[node name="right" type="TextureRect" parent="CanvasLayer/left2" unique_id=45420594]
+layout_mode = 0
+offset_left = 168.0
+offset_right = 213.0
+offset_bottom = 45.0
+texture = ExtResource("5_qphcm")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CanvasLayer/left2/right" unique_id=1336130148]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 8.0
+offset_right = 129.0
+offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("2_v5584")
+text = "Place"

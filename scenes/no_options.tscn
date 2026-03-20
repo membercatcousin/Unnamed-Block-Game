@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cqtgf0gcy5s0g"]
+
+[ext_resource type="Script" uid="uid://dpl2ie2brv5dm" path="res://scripts/no_options.gd" id="1_c6qjy"]
+[ext_resource type="Texture2D" uid="uid://bgoe7hn6jg0i5" path="res://assets/textures/Background.png" id="2_tcbj1"]
+
+[node name="no_options" type="Node2D" unique_id=1545058019]
+script = ExtResource("1_c6qjy")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1212367026]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_tcbj1")
+expand_mode = 3
+
+[node name="no_game" type="Label" parent="." unique_id=118824448]
+texture_filter = 2
+offset_left = 370.0
+offset_top = 257.0
+offset_right = 528.0
+offset_bottom = 280.0
+theme_override_font_sizes/font_size = 64
+text = "No Options yet, Sorry. :("
+
+[node name="back" type="Button" parent="." unique_id=1486905275]
+offset_left = 580.0
+offset_top = 800.0
+offset_right = 1090.0
+offset_bottom = 940.0
+theme_override_font_sizes/font_size = 64
+text = "Back
+"
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

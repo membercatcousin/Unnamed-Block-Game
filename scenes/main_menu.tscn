@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://ci6x7w41vcmtw"]
+
+[ext_resource type="Script" uid="uid://csc866oomf3dq" path="res://scripts/main_menu.gd" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://bgoe7hn6jg0i5" path="res://assets/textures/Background.png" id="2_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://bivihtrxqe3dt" path="res://assets/textures/logo.png" id="3_bqqt6"]
+[ext_resource type="FontFile" uid="uid://drtu3qt32e1mf" path="res://assets/fonts/font.ttf" id="3_rtw2f"]
+[ext_resource type="Script" uid="uid://chg2h1f63sl1a" path="res://scripts/splashtext.gd" id="4_wu84c"]
+[ext_resource type="Script" uid="uid://ds0gesiq412le" path="res://scripts/splashtext_rand.gd" id="5_8ln24"]
+
+[node name="main_menu" type="Node2D" unique_id=542584439]
+script = ExtResource("1_l6cm7")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=559143798]
+offset_right = 1921.7778
+offset_bottom = 1081.0
+texture = ExtResource("2_ekxnf")
+expand_mode = 3
+
+[node name="button_manager" type="Control" parent="." unique_id=1564158108]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="play_button" type="Button" parent="button_manager" unique_id=1074007430]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 230.0
+offset_right = 590.0
+offset_bottom = 370.0
+theme_override_font_sizes/font_size = 64
+text = "Play"
+
+[node name="options_button" type="Button" parent="button_manager" unique_id=1691896215]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 380.0
+offset_right = 590.0
+offset_bottom = 520.0
+theme_override_font_sizes/font_size = 64
+text = "Options
+"
+
+[node name="exit_button" type="Button" parent="button_manager" unique_id=918000594]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 530.0
+offset_right = 590.0
+offset_bottom = 670.0
+theme_override_font_sizes/font_size = 64
+text = "Exit game
+"
+
+[node name="logo" type="TextureRect" parent="." unique_id=1636574521]
+offset_left = 812.8999
+offset_top = 200.0
+offset_right = 1720.0
+offset_bottom = 617.0
+texture = ExtResource("3_bqqt6")
+stretch_mode = 4
+
+[node name="splashtext2" type="Control" parent="logo" unique_id=1757946917]
+anchors_preset = 0
+offset_left = 846.1
+offset_top = 263.99997
+offset_right = 886.1
+offset_bottom = 303.99997
+rotation = -0.4086865
+script = ExtResource("4_wu84c")
+
+[node name="splashtext1" type="RichTextLabel" parent="logo/splashtext2" unique_id=1286237643]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.462
+anchor_top = 0.48700002
+anchor_right = 1.462
+anchor_bottom = 0.48700002
+offset_left = -621.5248
+offset_top = -215.44946
+offset_right = 226.93407
+offset_bottom = -162.99182
+rotation = 0.33911565
+theme_override_colors/default_color = Color(1, 1, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_rtw2f")
+theme_override_font_sizes/normal_font_size = 32
+text = "You should throw a f*cking beach party!"
+horizontal_alignment = 1
+script = ExtResource("5_8ln24")
+
+[node name="GameVersionLabel" type="RichTextLabel" parent="." unique_id=2022880019]
+offset_left = 32.0
+offset_top = 1004.0
+offset_right = 347.0
+offset_bottom = 1065.0
+theme_override_fonts/normal_font = ExtResource("3_rtw2f")
+theme_override_font_sizes/normal_font_size = 32
+text = "Preview 0.7"
+
+[connection signal="pressed" from="button_manager/play_button" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="button_manager/options_button" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="button_manager/exit_button" to="." method="_on_exit_button_pressed"]

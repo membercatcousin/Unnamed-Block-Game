@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bupvihmapk1it"]
+
+[ext_resource type="Texture2D" uid="uid://bgoe7hn6jg0i5" path="res://assets/textures/Background.png" id="1_61cq0"]
+[ext_resource type="Script" uid="uid://c13vbst4pj5gv" path="res://scripts/no_game.gd" id="1_lyfvp"]
+
+[node name="no_game" type="Node2D" unique_id=1545058019]
+script = ExtResource("1_lyfvp")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1212367026]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_61cq0")
+expand_mode = 3
+
+[node name="no_game" type="Label" parent="." unique_id=118824448]
+texture_filter = 2
+offset_left = 370.0
+offset_top = 257.0
+offset_right = 528.0
+offset_bottom = 280.0
+theme_override_font_sizes/font_size = 64
+text = "No Tutorial yet, Sorry. :("
+
+[node name="back" type="Button" parent="." unique_id=1486905275]
+offset_left = 580.0
+offset_top = 800.0
+offset_right = 1090.0
+offset_bottom = 940.0
+theme_override_font_sizes/font_size = 64
+text = "Back
+"
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
