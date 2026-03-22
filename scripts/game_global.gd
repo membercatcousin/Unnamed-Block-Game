@@ -21,13 +21,12 @@ func _input(event):
 		
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			$TileMapLayer.erase_cell(tile_pos)
-			
 		if event.button_index == MOUSE_BUTTON_RIGHT:
 			$TileMapLayer.set_cell(tile_pos, selected_block, Vector2i(0,0))
 			
 	if event is InputEventMouseButton and event.pressed:
 		if event.button_index == MOUSE_BUTTON_WHEEL_UP:
-			if selected_block == 2:
+			if selected_block == 5:
 				selected_block = 0
 			else:
 				selected_block += 1

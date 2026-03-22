@@ -1,6 +1,6 @@
 extends Node
 
-var reset_keybind = KEY_F5
+var reset_keybind: Key = KEY_F5
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

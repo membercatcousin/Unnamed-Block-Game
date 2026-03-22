@@ -1,6 +1,6 @@
 extends Control
 
-var time = 0.0
+var time: float = 0.0
 
 func _process(delta):
 	time += delta

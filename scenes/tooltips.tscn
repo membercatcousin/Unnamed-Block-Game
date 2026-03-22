@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://drtu3qt32e1mf" path="res://assets/fonts/font.ttf" id="2_v5584"]
 [ext_resource type="Texture2D" uid="uid://boepo2rsuvwhq" path="res://assets/textures/gui/tooltips/right_key.png" id="3_alcj5"]
 [ext_resource type="Texture2D" uid="uid://bkhl2fkneh3sf" path="res://assets/textures/gui/tooltips/left_mouse.png" id="4_alcj5"]
+[ext_resource type="Texture2D" uid="uid://b5bt1vt1yde81" path="res://assets/textures/gui/tooltips/space_key.png" id="5_2425l"]
 [ext_resource type="Texture2D" uid="uid://uumjnnfa6ku4" path="res://assets/textures/gui/tooltips/right_mouse.png" id="5_qphcm"]
 
 [node name="tooltips" type="Node2D" unique_id=495275654]
@@ -41,10 +42,32 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 0
 offset_left = 48.0
 offset_top = 8.0
-offset_right = 129.0
-offset_bottom = 31.0
+offset_right = 167.0
+offset_bottom = 34.0
 theme_override_fonts/font = ExtResource("2_v5584")
 text = "Strafe right"
+
+[node name="jump" type="TextureRect" parent="CanvasLayer/left/right" unique_id=1356484995]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -7.3777776
+anchor_top = -1.0888889
+anchor_right = -5.9333334
+anchor_bottom = -1.0888889
+offset_left = 168.0
+offset_right = 213.0
+offset_bottom = 45.0
+texture = ExtResource("5_2425l")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CanvasLayer/left/right/jump" unique_id=1016701534]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 8.0
+offset_right = 198.0
+offset_bottom = 34.0
+theme_override_fonts/font = ExtResource("2_v5584")
+text = "Jump"
 
 [node name="left2" type="TextureRect" parent="CanvasLayer" unique_id=1113598711]
 offset_left = 1608.0

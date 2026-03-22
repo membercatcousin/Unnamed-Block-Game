@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bnocwbeioh7x3"]
+
+[ext_resource type="Texture2D" uid="uid://da3g1xqe84ved" path="res://assets/textures/creatures/chicken.png" id="1_8lku0"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1yv3s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nutj5"]
+radius = 67.0
+
+[node name="chicken" type="RigidBody2D" unique_id=819262636]
+physics_material_override = SubResource("PhysicsMaterial_1yv3s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1330410122]
+position = Vector2(58, 68)
+shape = SubResource("CircleShape2D_nutj5")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1671358555]
+offset_right = 125.0
+offset_bottom = 125.0
+texture = ExtResource("1_8lku0")
