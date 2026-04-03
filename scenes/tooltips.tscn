@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://bkhl2fkneh3sf" path="res://assets/textures/gui/tooltips/left_mouse.png" id="4_alcj5"]
 [ext_resource type="Texture2D" uid="uid://b5bt1vt1yde81" path="res://assets/textures/gui/tooltips/space_key.png" id="5_2425l"]
 [ext_resource type="Texture2D" uid="uid://uumjnnfa6ku4" path="res://assets/textures/gui/tooltips/right_mouse.png" id="5_qphcm"]
+[ext_resource type="Texture2D" uid="uid://b3xchoh5q7o8g" path="res://assets/textures/gui/health.png" id="8_4g4tr"]
+[ext_resource type="Texture2D" uid="uid://c468sfnegf67m" path="res://assets/textures/gui/bar_empty.png" id="9_675aq"]
+[ext_resource type="Texture2D" uid="uid://cdjeuemo8fgfh" path="res://assets/textures/gui/bar_full.png" id="10_isene"]
 
 [node name="tooltips" type="Node2D" unique_id=495275654]
 script = ExtResource("1_qphcm")
@@ -101,3 +104,41 @@ offset_right = 129.0
 offset_bottom = 31.0
 theme_override_fonts/font = ExtResource("2_v5584")
 text = "Place"
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=704774570]
+visible = false
+offset_left = 1250.909
+offset_top = 64.0
+offset_right = 1856.0
+offset_bottom = 384.0
+texture = ExtResource("8_4g4tr")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/TextureRect" unique_id=1855090457]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 44.0
+offset_right = 146.0
+offset_bottom = 165.0
+color = Color(0, 0.6, 0.9647059, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/TextureRect" unique_id=1614653454]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 20.0
+offset_right = 584.09094
+offset_bottom = 126.0
+theme_override_fonts/normal_font = ExtResource("2_v5584")
+theme_override_font_sizes/normal_font_size = 32
+text = "PlayerName"
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer/TextureRect" unique_id=42992184]
+layout_mode = 0
+offset_left = 186.09094
+offset_top = 95.0
+offset_right = 463.09094
+offset_bottom = 172.0
+value = 23.0
+rounded = true
+nine_patch_stretch = true
+texture_under = ExtResource("9_675aq")
+texture_progress = ExtResource("10_isene")

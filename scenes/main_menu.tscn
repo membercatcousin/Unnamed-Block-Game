@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://chg2h1f63sl1a" path="res://scripts/splashtext.gd" id="4_wu84c"]
 [ext_resource type="Script" uid="uid://ds0gesiq412le" path="res://scripts/splashtext_rand.gd" id="5_8ln24"]
 [ext_resource type="AudioStream" uid="uid://c1epa80pxgs77" path="res://assets/sounds/click.ogg" id="7_oa1go"]
+[ext_resource type="Script" uid="uid://dx3rdwdrbmk5d" path="res://scripts/secret_credits.gd" id="8_tbmy8"]
 
 [node name="main_menu" type="Node2D" unique_id=542584439]
 script = ExtResource("1_l6cm7")
@@ -91,18 +92,45 @@ text = "You should throw a f*cking beach party!"
 horizontal_alignment = 1
 script = ExtResource("5_8ln24")
 
-[node name="GameVersionLabel" type="RichTextLabel" parent="." unique_id=2022880019]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=605080500]
+stream = ExtResource("7_oa1go")
+
+[node name="labels" type="Control" parent="." unique_id=1082289033]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GameVersionLabel" type="RichTextLabel" parent="labels" unique_id=2022880019]
+layout_mode = 0
 offset_left = 32.0
 offset_top = 1004.0
 offset_right = 347.0
 offset_bottom = 1065.0
 theme_override_fonts/normal_font = ExtResource("3_rtw2f")
 theme_override_font_sizes/normal_font_size = 32
-text = "Preview 0.8"
+text = "Preview 0.8.2"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=605080500]
-stream = ExtResource("7_oa1go")
+[node name="CopyrightLabel" type="RichTextLabel" parent="labels" unique_id=1494860797]
+layout_mode = 0
+offset_left = 859.0
+offset_top = 998.0
+offset_right = 2015.0
+offset_bottom = 1075.0
+theme_override_fonts/normal_font = ExtResource("3_rtw2f")
+theme_override_font_sizes/normal_font_size = 32
+text = "Copyright Unnamed Block Game. Distributing is allowed!"
+
+[node name="Button" type="Button" parent="labels/CopyrightLabel" unique_id=576234325]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -9.0
+offset_right = 1155.0
+offset_bottom = 68.0
+script = ExtResource("8_tbmy8")
 
 [connection signal="pressed" from="button_manager/play_button" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="button_manager/options_button" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="button_manager/exit_button" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="labels/CopyrightLabel/Button" to="labels/CopyrightLabel/Button" method="_on_pressed"]

@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Unnamed Block Game"
 config/description="It's unnamed, It's blocky, And it's a game!s"
-config/version="0.8"
+config/version="0.8.2"
 run/main_scene="uid://ci6x7w41vcmtw"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 run/max_fps=60

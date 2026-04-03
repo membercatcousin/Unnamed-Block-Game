@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://sasbemn2wg48"]
+
+[ext_resource type="Texture2D" uid="uid://bgoe7hn6jg0i5" path="res://assets/textures/Background.png" id="1_27l6r"]
+[ext_resource type="Script" uid="uid://dcmdiya10574c" path="res://scripts/credits_menu.gd" id="1_p38dx"]
+[ext_resource type="FontFile" uid="uid://drtu3qt32e1mf" path="res://assets/fonts/font.ttf" id="3_oqgs5"]
+
+[node name="Node2D" type="Node2D" unique_id=1620314281]
+script = ExtResource("1_p38dx")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1118090915]
+offset_right = 1921.7778
+offset_bottom = 1081.0
+texture = ExtResource("1_27l6r")
+expand_mode = 3
+
+[node name="menu_label" type="Label" parent="." unique_id=283883370]
+offset_left = 32.0
+offset_right = 504.0
+offset_bottom = 104.0
+theme_override_fonts/font = ExtResource("3_oqgs5")
+theme_override_font_sizes/font_size = 128
+text = "Credits:"
+
+[node name="testers_label" type="Label" parent="menu_label" unique_id=622324513]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 356.0
+offset_right = 488.0
+offset_bottom = 460.0
+theme_override_fonts/font = ExtResource("3_oqgs5")
+theme_override_font_sizes/font_size = 64
+text = "Testers:"
+
+[node name="tester1" type="Label" parent="menu_label/testers_label" unique_id=1380239942]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 88.0
+offset_right = 852.0
+offset_bottom = 140.0
+theme_override_fonts/font = ExtResource("3_oqgs5")
+theme_override_font_sizes/font_size = 32
+text = "membercatcousin (Dev/Tester/Owner of the game)"
+
+[node name="tester2" type="Label" parent="menu_label/testers_label" unique_id=2099636732]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 132.0
+offset_right = 1130.0
+offset_bottom = 184.0
+theme_override_fonts/font = ExtResource("3_oqgs5")
+theme_override_font_sizes/font_size = 32
+text = "Applemax bkhr (Tester of the game, also shout out to him for beating cancer)"
+
+[node name="devs_label" type="Label" parent="menu_label" unique_id=522085663]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 224.0
+offset_right = 488.0
+offset_bottom = 328.0
+theme_override_fonts/font = ExtResource("3_oqgs5")
+theme_override_font_sizes/font_size = 64
+text = "Developers:"
+
+[node name="dev1" type="Label" parent="menu_label/devs_label" unique_id=1912369064]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 88.0
+offset_right = 852.0
+offset_bottom = 140.0
+theme_override_fonts/font = ExtResource("3_oqgs5")
+theme_override_font_sizes/font_size = 32
+text = "membercatcousin (Dev/Tester/Owner of the game)"
+
+[node name="emotions_label" type="Label" parent="menu_label" unique_id=353137567]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 536.0
+offset_right = 732.0
+offset_bottom = 640.0
+theme_override_fonts/font = ExtResource("3_oqgs5")
+theme_override_font_sizes/font_size = 64
+text = "Emotional support:"
+
+[node name="dev1" type="Label" parent="menu_label/emotions_label" unique_id=259896617]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.022000002
+anchor_top = 0.846
+anchor_right = 0.022000002
+anchor_bottom = 0.846
+offset_left = 0.24799919
+offset_top = 0.01599884
+offset_right = 836.248
+offset_bottom = 52.016
+theme_override_fonts/font = ExtResource("3_oqgs5")
+theme_override_font_sizes/font_size = 32
+text = "PropDev (Chill guy)"
+
+[node name="dev2" type="Label" parent="menu_label/emotions_label" unique_id=1790263024]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.022000002
+anchor_top = 1.3080001
+anchor_right = 0.022000002
+anchor_bottom = 1.3080001
+offset_left = 0.24799919
+offset_top = -0.03201294
+offset_right = 836.248
+offset_bottom = 51.967987
+theme_override_fonts/font = ExtResource("3_oqgs5")
+theme_override_font_sizes/font_size = 32
+text = "LiteBlu (Even chiller guy)"
+
+[node name="button_manager" type="Control" parent="." unique_id=1900863006]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="back" type="Button" parent="button_manager" unique_id=1903300632]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 800.0
+offset_right = 1090.0
+offset_bottom = 940.0
+theme_override_fonts/font = ExtResource("3_oqgs5")
+theme_override_font_sizes/font_size = 64
+text = "Back
+"
+
+[connection signal="pressed" from="button_manager/back" to="." method="_on_back_pressed"]

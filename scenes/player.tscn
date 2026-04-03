@@ -6,8 +6,6 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8vuu"]
 size = Vector2(118, 247.5)
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g2els"]
-
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=707346117]
 script = ExtResource("1_3vyb7")
 
@@ -34,11 +32,3 @@ color = Color(0, 0.6, 0.9647059, 1)
 
 [node name="tooltips" parent="CollisionShape2D" unique_id=495275654 instance=ExtResource("2_g2els")]
 position = Vector2(-960, -663.75)
-
-[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=61764108]
-mass = 5.0
-physics_material_override = SubResource("PhysicsMaterial_g2els")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="RigidBody2D" unique_id=240964795]
-position = Vector2(0, 123.5)
-shape = SubResource("RectangleShape2D_u8vuu")
