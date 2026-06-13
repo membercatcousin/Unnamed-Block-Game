@@ -12,18 +12,19 @@ config_version=5
 
 config/name="Unnamed Block Game"
 config/description="It's unnamed, It's blocky, And it's a game!s"
-config/version="0.8.2"
+config/version="0.8.4"
 run/main_scene="uid://ci6x7w41vcmtw"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 run/max_fps=60
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/show_image=false
 boot_splash/stretch_mode=0
-config/icon="res://icon.svg"
+config/icon="uid://boq8v3dhnhtsh"
 
 [autoload]
 
 global="*uid://d2te72wg8cb3n"
+DiscordRPCLoader="*uid://c0kn7nwai6hjd"
 
 [display]
 
@@ -32,6 +33,10 @@ window/size/viewport_height=1080
 window/size/mode=3
 window/subwindows/embed_subwindows=false
 window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/discord-rpc-gd/plugin.cfg")
 
 [input]
 

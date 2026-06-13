@@ -109,7 +109,7 @@ offset_right = 347.0
 offset_bottom = 1065.0
 theme_override_fonts/normal_font = ExtResource("3_rtw2f")
 theme_override_font_sizes/normal_font_size = 32
-text = "Preview 0.8.2"
+text = "Preview 0.8.4"
 
 [node name="CopyrightLabel" type="RichTextLabel" parent="labels" unique_id=1494860797]
 layout_mode = 0
