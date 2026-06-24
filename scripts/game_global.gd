@@ -14,7 +14,7 @@ func _input(event):
 			
 	if event is InputEventMouseButton and event.pressed:
 		if event.button_index == MOUSE_BUTTON_WHEEL_UP:
-			if selected_block == 5:
+			if selected_block == 7:
 				selected_block = 0
 			else:
 				selected_block += 1
