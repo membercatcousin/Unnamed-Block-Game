@@ -31,7 +31,7 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="reset" type="Button" parent="button_manager" unique_id=1324492915]
+[node name="fast" type="Button" parent="button_manager" unique_id=1930976193]
 layout_mode = 0
 offset_left = 64.0
 offset_top = 64.0
@@ -39,7 +39,17 @@ offset_right = 574.0
 offset_bottom = 204.0
 theme_override_fonts/font = ExtResource("4_3xsyx")
 theme_override_font_sizes/font_size = 40
-text = "Reset Game Key: F5"
+text = "Be Fast: ON"
+
+[node name="physics" type="Button" parent="button_manager" unique_id=1729800720]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 216.0
+offset_right = 574.0
+offset_bottom = 356.0
+theme_override_fonts/font = ExtResource("4_3xsyx")
+theme_override_font_sizes/font_size = 40
+text = "Legacy Physics: OFF"
 
 [node name="back" type="Button" parent="button_manager" unique_id=1577372289]
 layout_mode = 0
@@ -55,5 +65,6 @@ text = "Back
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1333603836]
 stream = ExtResource("4_lfjc7")
 
-[connection signal="pressed" from="button_manager/reset" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="button_manager/fast" to="." method="_on_fast_pressed"]
+[connection signal="pressed" from="button_manager/physics" to="." method="_on_physics_pressed"]
 [connection signal="pressed" from="button_manager/back" to="." method="_on_back_pressed"]

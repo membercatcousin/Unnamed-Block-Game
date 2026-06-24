@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bgoe7hn6jg0i5" path="res://assets/textures/Background.png" id="1_27l6r"]
 [ext_resource type="Script" uid="uid://dcmdiya10574c" path="res://scripts/credits_menu.gd" id="1_p38dx"]
 [ext_resource type="FontFile" uid="uid://drtu3qt32e1mf" path="res://assets/fonts/font.ttf" id="3_oqgs5"]
+[ext_resource type="AudioStream" uid="uid://c1epa80pxgs77" path="res://assets/sounds/click.ogg" id="4_tljk3"]
 
 [node name="Node2D" type="Node2D" unique_id=1620314281]
 script = ExtResource("1_p38dx")
@@ -127,5 +128,8 @@ theme_override_fonts/font = ExtResource("3_oqgs5")
 theme_override_font_sizes/font_size = 64
 text = "Back
 "
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=787777147]
+stream = ExtResource("4_tljk3")
 
 [connection signal="pressed" from="button_manager/back" to="." method="_on_back_pressed"]

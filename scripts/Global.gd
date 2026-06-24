@@ -1,6 +1,5 @@
 extends Node
 
-var reset_keybind: Key = KEY_F5
 var debug: bool = false
 
 
