@@ -41,6 +41,16 @@ theme_override_fonts/font = ExtResource("4_3xsyx")
 theme_override_font_sizes/font_size = 40
 text = "Be Fast: ON"
 
+[node name="texture_packs" type="Button" parent="button_manager" unique_id=456627945]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 368.0
+offset_right = 574.0
+offset_bottom = 508.0
+theme_override_fonts/font = ExtResource("4_3xsyx")
+theme_override_font_sizes/font_size = 40
+text = "Texture Packs"
+
 [node name="physics" type="Button" parent="button_manager" unique_id=1729800720]
 layout_mode = 0
 offset_left = 64.0
