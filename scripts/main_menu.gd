@@ -15,14 +15,14 @@ func _process(delta: float) -> void:
 func _on_play_button_pressed() -> void:
 	audio.play()
 	await audio.finished
-	get_tree().change_scene_to_file("res://scenes/play_menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/ui/play_menu.tscn")
 
 	pass # Replace with function body.
 
 func _on_options_button_pressed() -> void:
 	audio.play()
 	await audio.finished
-	get_tree().change_scene_to_file("res://scenes/options_menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/ui/options_menu.tscn")
 	
 	pass # Replace with function body.
 

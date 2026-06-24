@@ -1,21 +1,21 @@
 [gd_scene format=3 uid="uid://ci6x7w41vcmtw"]
 
-[ext_resource type="Script" uid="uid://csc866oomf3dq" path="res://scripts/main_menu.gd" id="1_l6cm7"]
-[ext_resource type="Texture2D" uid="uid://bgoe7hn6jg0i5" path="res://assets/textures/Background.png" id="2_ekxnf"]
-[ext_resource type="Texture2D" uid="uid://bivihtrxqe3dt" path="res://assets/textures/logo.png" id="3_bqqt6"]
-[ext_resource type="FontFile" uid="uid://drtu3qt32e1mf" path="res://assets/fonts/font.ttf" id="3_rtw2f"]
-[ext_resource type="Script" uid="uid://chg2h1f63sl1a" path="res://scripts/splashtext.gd" id="4_wu84c"]
-[ext_resource type="Script" uid="uid://ds0gesiq412le" path="res://scripts/splashtext_rand.gd" id="5_8ln24"]
-[ext_resource type="AudioStream" uid="uid://c1epa80pxgs77" path="res://assets/sounds/click.ogg" id="7_oa1go"]
-[ext_resource type="Script" uid="uid://dx3rdwdrbmk5d" path="res://scripts/secret_credits.gd" id="8_tbmy8"]
+[ext_resource type="Script" uid="uid://csc866oomf3dq" path="res://scripts/main_menu.gd" id="1_wb0q5"]
+[ext_resource type="Texture2D" uid="uid://bgoe7hn6jg0i5" path="res://assets/textures/Background.png" id="2_q85j6"]
+[ext_resource type="FontFile" uid="uid://drtu3qt32e1mf" path="res://assets/fonts/font.ttf" id="3_8g5eo"]
+[ext_resource type="Texture2D" uid="uid://bivihtrxqe3dt" path="res://assets/textures/logo.png" id="4_7suek"]
+[ext_resource type="Script" uid="uid://chg2h1f63sl1a" path="res://scripts/splashtext.gd" id="5_otr3d"]
+[ext_resource type="Script" uid="uid://ds0gesiq412le" path="res://scripts/splashtext_rand.gd" id="6_8ekit"]
+[ext_resource type="AudioStream" uid="uid://c1epa80pxgs77" path="res://assets/sounds/click.ogg" id="7_n4uci"]
+[ext_resource type="Script" uid="uid://dx3rdwdrbmk5d" path="res://scripts/secret_credits.gd" id="8_877pj"]
 
 [node name="main_menu" type="Node2D" unique_id=542584439]
-script = ExtResource("1_l6cm7")
+script = ExtResource("1_wb0q5")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=559143798]
 offset_right = 1921.7778
 offset_bottom = 1081.0
-texture = ExtResource("2_ekxnf")
+texture = ExtResource("2_q85j6")
 expand_mode = 3
 
 [node name="button_manager" type="Control" parent="." unique_id=1564158108]
@@ -30,7 +30,7 @@ offset_left = 80.0
 offset_top = 230.0
 offset_right = 590.0
 offset_bottom = 370.0
-theme_override_fonts/font = ExtResource("3_rtw2f")
+theme_override_fonts/font = ExtResource("3_8g5eo")
 theme_override_font_sizes/font_size = 64
 text = "Play"
 
@@ -40,7 +40,7 @@ offset_left = 80.0
 offset_top = 380.0
 offset_right = 590.0
 offset_bottom = 520.0
-theme_override_fonts/font = ExtResource("3_rtw2f")
+theme_override_fonts/font = ExtResource("3_8g5eo")
 theme_override_font_sizes/font_size = 64
 text = "Options
 "
@@ -51,7 +51,7 @@ offset_left = 80.0
 offset_top = 530.0
 offset_right = 590.0
 offset_bottom = 670.0
-theme_override_fonts/font = ExtResource("3_rtw2f")
+theme_override_fonts/font = ExtResource("3_8g5eo")
 theme_override_font_sizes/font_size = 64
 text = "Exit game
 "
@@ -61,7 +61,7 @@ offset_left = 812.8999
 offset_top = 200.0
 offset_right = 1720.0
 offset_bottom = 617.0
-texture = ExtResource("3_bqqt6")
+texture = ExtResource("4_7suek")
 stretch_mode = 4
 
 [node name="splashtext2" type="Control" parent="logo" unique_id=1757946917]
@@ -71,7 +71,7 @@ offset_top = 263.99997
 offset_right = 886.1
 offset_bottom = 303.99997
 rotation = -0.4086865
-script = ExtResource("4_wu84c")
+script = ExtResource("5_otr3d")
 
 [node name="splashtext1" type="RichTextLabel" parent="logo/splashtext2" unique_id=1286237643]
 layout_mode = 1
@@ -86,14 +86,14 @@ offset_right = 226.93407
 offset_bottom = -162.99182
 rotation = 0.33911565
 theme_override_colors/default_color = Color(1, 1, 0, 1)
-theme_override_fonts/normal_font = ExtResource("3_rtw2f")
+theme_override_fonts/normal_font = ExtResource("3_8g5eo")
 theme_override_font_sizes/normal_font_size = 32
 text = "You should throw a f*cking beach party!"
 horizontal_alignment = 1
-script = ExtResource("5_8ln24")
+script = ExtResource("6_8ekit")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=605080500]
-stream = ExtResource("7_oa1go")
+stream = ExtResource("7_n4uci")
 
 [node name="labels" type="Control" parent="." unique_id=1082289033]
 layout_mode = 3
@@ -107,7 +107,7 @@ offset_left = 32.0
 offset_top = 1004.0
 offset_right = 347.0
 offset_bottom = 1065.0
-theme_override_fonts/normal_font = ExtResource("3_rtw2f")
+theme_override_fonts/normal_font = ExtResource("3_8g5eo")
 theme_override_font_sizes/normal_font_size = 32
 text = "Preview 0.8.4"
 
@@ -117,7 +117,7 @@ offset_left = 859.0
 offset_top = 998.0
 offset_right = 2015.0
 offset_bottom = 1075.0
-theme_override_fonts/normal_font = ExtResource("3_rtw2f")
+theme_override_fonts/normal_font = ExtResource("3_8g5eo")
 theme_override_font_sizes/normal_font_size = 32
 text = "Copyright Unnamed Block Game. Distributing is allowed!"
 
@@ -128,7 +128,7 @@ layout_mode = 0
 offset_left = -9.0
 offset_right = 1155.0
 offset_bottom = 68.0
-script = ExtResource("8_tbmy8")
+script = ExtResource("8_877pj")
 
 [connection signal="pressed" from="button_manager/play_button" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="button_manager/options_button" to="." method="_on_options_button_pressed"]

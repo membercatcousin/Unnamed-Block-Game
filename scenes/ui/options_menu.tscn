@@ -1,19 +1,19 @@
 [gd_scene format=3 uid="uid://dc2emlp20wwah"]
 
-[ext_resource type="Script" uid="uid://vpqfustvvqup" path="res://scripts/options_menu.gd" id="1_liyum"]
-[ext_resource type="Texture2D" uid="uid://bgoe7hn6jg0i5" path="res://assets/textures/Background.png" id="2_ijpji"]
-[ext_resource type="Texture2D" uid="uid://bivihtrxqe3dt" path="res://assets/textures/logo.png" id="3_dhn0l"]
-[ext_resource type="FontFile" uid="uid://drtu3qt32e1mf" path="res://assets/fonts/font.ttf" id="4_3xsyx"]
-[ext_resource type="AudioStream" uid="uid://c1epa80pxgs77" path="res://assets/sounds/click.ogg" id="4_lfjc7"]
+[ext_resource type="Script" uid="uid://vpqfustvvqup" path="res://scripts/options_menu.gd" id="1_0ejsc"]
+[ext_resource type="Texture2D" uid="uid://bgoe7hn6jg0i5" path="res://assets/textures/Background.png" id="2_snsgv"]
+[ext_resource type="Texture2D" uid="uid://bivihtrxqe3dt" path="res://assets/textures/logo.png" id="3_hb1yv"]
+[ext_resource type="FontFile" uid="uid://drtu3qt32e1mf" path="res://assets/fonts/font.ttf" id="4_ovlcw"]
+[ext_resource type="AudioStream" uid="uid://c1epa80pxgs77" path="res://assets/sounds/click.ogg" id="5_gff41"]
 
 [node name="options_menu" type="Node2D" unique_id=1895633997]
 position = Vector2(-1, 0)
-script = ExtResource("1_liyum")
+script = ExtResource("1_0ejsc")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1911100017]
 offset_right = 1921.7778
 offset_bottom = 1081.0
-texture = ExtResource("2_ijpji")
+texture = ExtResource("2_snsgv")
 expand_mode = 3
 
 [node name="logo" type="TextureRect" parent="TextureRect" unique_id=1899492642]
@@ -22,7 +22,7 @@ offset_left = 812.8999
 offset_top = 200.0
 offset_right = 1720.0
 offset_bottom = 617.0
-texture = ExtResource("3_dhn0l")
+texture = ExtResource("3_hb1yv")
 stretch_mode = 4
 
 [node name="button_manager" type="Control" parent="." unique_id=548551827]
@@ -37,7 +37,7 @@ offset_left = 64.0
 offset_top = 64.0
 offset_right = 574.0
 offset_bottom = 204.0
-theme_override_fonts/font = ExtResource("4_3xsyx")
+theme_override_fonts/font = ExtResource("4_ovlcw")
 theme_override_font_sizes/font_size = 40
 text = "Be Fast: ON"
 
@@ -47,7 +47,7 @@ offset_left = 64.0
 offset_top = 368.0
 offset_right = 574.0
 offset_bottom = 508.0
-theme_override_fonts/font = ExtResource("4_3xsyx")
+theme_override_fonts/font = ExtResource("4_ovlcw")
 theme_override_font_sizes/font_size = 40
 text = "Texture Packs"
 
@@ -57,7 +57,7 @@ offset_left = 64.0
 offset_top = 216.0
 offset_right = 574.0
 offset_bottom = 356.0
-theme_override_fonts/font = ExtResource("4_3xsyx")
+theme_override_fonts/font = ExtResource("4_ovlcw")
 theme_override_font_sizes/font_size = 40
 text = "Legacy Physics: OFF"
 
@@ -67,13 +67,13 @@ offset_left = 580.0
 offset_top = 800.0
 offset_right = 1090.0
 offset_bottom = 940.0
-theme_override_fonts/font = ExtResource("4_3xsyx")
+theme_override_fonts/font = ExtResource("4_ovlcw")
 theme_override_font_sizes/font_size = 64
 text = "Back
 "
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1333603836]
-stream = ExtResource("4_lfjc7")
+stream = ExtResource("5_gff41")
 
 [connection signal="pressed" from="button_manager/fast" to="." method="_on_fast_pressed"]
 [connection signal="pressed" from="button_manager/physics" to="." method="_on_physics_pressed"]

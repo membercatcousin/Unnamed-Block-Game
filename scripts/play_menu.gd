@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 func _on_back_pressed() -> void:
 	audio.play()
 	await audio.finished
-	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/ui/main_menu.tscn")
 	pass # Replace with function body.
 
 
@@ -30,5 +30,5 @@ func _on_new_world_pressed() -> void:
 func _on_new_tutorial_world_pressed() -> void:
 	audio.play()
 	await audio.finished
-	get_tree().change_scene_to_file("res://scenes/no_game.tscn")
+	get_tree().change_scene_to_file("res://scenes/ui/no_game.tscn")
 	pass # Replace with function body.
