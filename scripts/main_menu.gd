@@ -1,9 +1,11 @@
 extends Node
 
 @onready var audio = $AudioStreamPlayer
+@onready var ver_lable = $labels/GameVersionLabel
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	ver_lable.text = "Preview %s" % global.VERSION
 	pass # Replace with function body.
 
 

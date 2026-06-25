@@ -142,3 +142,11 @@ rounded = true
 nine_patch_stretch = true
 texture_under = ExtResource("9_675aq")
 texture_progress = ExtResource("10_isene")
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1027788637]
+offset_left = 1158.0
+offset_top = 1.0
+offset_right = 1914.0
+offset_bottom = 380.0
+theme_override_fonts/font = ExtResource("2_v5584")
+theme_override_font_sizes/font_size = 32

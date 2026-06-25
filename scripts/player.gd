@@ -41,7 +41,7 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 
 	# Swim/Fly mechanics
-	if global.debug or is_in_water == true:
+	if is_in_water == true:
 		if Input.is_action_just_pressed("ui_up") or Input.is_action_just_pressed("ui_accept"):
 			# If in water, make the upward swim speed a bit gentler than a full land jump
 			if is_in_water:

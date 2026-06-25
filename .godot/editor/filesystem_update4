@@ -1,4 +1,6 @@
-res://scenes/ui/texture_pack_menu.tscn
-res://scenes/ui/options_menu.tscn
-res://splashes.txt
+res://scenes/tooltips.tscn
+res://scripts/tooltips.gd
 res://scenes/ui/main_menu.tscn
+res://scripts/Global.gd
+res://scripts/player.gd
+res://scripts/main_menu.gd

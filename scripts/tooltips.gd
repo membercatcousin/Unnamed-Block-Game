@@ -1,21 +1,11 @@
 extends Node2D
 
-var is_hidden: bool = false
+@onready var debug_label = $CanvasLayer/Label
 
-@onready var debug_label = $DebugLabel
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_key_pressed(KEY_F1):
-		if is_hidden == false:
-			hide()
-			is_hidden = true
-		if is_hidden == true:
-			show()
-			is_hidden = false
-	pass
+	# We calculate these inside _process so they update every frame
+	var ram = Performance.get_monitor(Performance.MEMORY_STATIC) / 1024 / 1024
+	var fps = Engine.get_frames_per_second()
+	
+	if global.debug == true:
+		debug_label.text = "DEV BUILD DETECTED! DEBUG MODE IS ON.\nVERSION: %s\nOS: %s\nFPS: %d\nRAM: %.2f MB" % [global.VERSION, global.os_name, fps, ram]
