@@ -24,9 +24,9 @@ offset_bottom = 40.0
 [node name="default_pack" type="Button" parent="button_manager" unique_id=456627945]
 layout_mode = 0
 offset_left = 1106.0
-offset_top = 310.0
+offset_top = 158.0
 offset_right = 1901.0
-offset_bottom = 450.0
+offset_bottom = 298.0
 theme_override_fonts/font = ExtResource("4_wcis5")
 theme_override_font_sizes/font_size = 40
 text = "Default Pack (can't be disabled)"
@@ -41,26 +41,6 @@ theme_override_fonts/font = ExtResource("4_wcis5")
 theme_override_font_sizes/font_size = 64
 text = "Back
 "
-
-[node name="pack2" type="Button" parent="button_manager" unique_id=664503662]
-layout_mode = 0
-offset_left = 1106.0
-offset_top = 158.0
-offset_right = 1901.0
-offset_bottom = 298.0
-theme_override_fonts/font = ExtResource("4_wcis5")
-theme_override_font_sizes/font_size = 40
-text = "My Very Cool Pack 2"
-
-[node name="pack3" type="Button" parent="button_manager" unique_id=994671923]
-layout_mode = 0
-offset_left = 50.0
-offset_top = 158.0
-offset_right = 845.0
-offset_bottom = 298.0
-theme_override_fonts/font = ExtResource("4_wcis5")
-theme_override_font_sizes/font_size = 40
-text = "My Very Cool Pack"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1333603836]
 stream = ExtResource("5_71q46")
@@ -90,6 +70,6 @@ offset_right = 1699.0
 offset_bottom = 625.0
 theme_override_fonts/font = ExtResource("4_wcis5")
 theme_override_font_sizes/font_size = 32
-text = "You currently cannot import any texture packs isnce they didn't get added yet..."
+text = "You currently cannot import any texture packs since they didn't get added yet..."
 
 [connection signal="pressed" from="button_manager/back" to="." method="_on_back_pressed"]
