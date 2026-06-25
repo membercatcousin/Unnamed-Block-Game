@@ -42,6 +42,7 @@ theme_override_font_sizes/font_size = 40
 text = "Be Fast: ON"
 
 [node name="texture_packs" type="Button" parent="button_manager" unique_id=456627945]
+visible = false
 layout_mode = 0
 offset_left = 64.0
 offset_top = 368.0
