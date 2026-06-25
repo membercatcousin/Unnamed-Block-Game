@@ -22,3 +22,10 @@ func _on_physics_pressed() -> void:
 func _on_fast_pressed() -> void:
 	audio.play()
 	pass # Replace with function body.
+
+
+func _on_texture_packs_pressed() -> void:
+	audio.play()
+	await audio.finished
+	get_tree().change_scene_to_file("res://scenes/ui/texture_pack_menu.tscn")
+	pass # Replace with function body.

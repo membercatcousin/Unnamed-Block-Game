@@ -76,5 +76,6 @@ text = "Back
 stream = ExtResource("5_gff41")
 
 [connection signal="pressed" from="button_manager/fast" to="." method="_on_fast_pressed"]
+[connection signal="pressed" from="button_manager/texture_packs" to="." method="_on_texture_packs_pressed"]
 [connection signal="pressed" from="button_manager/physics" to="." method="_on_physics_pressed"]
 [connection signal="pressed" from="button_manager/back" to="." method="_on_back_pressed"]

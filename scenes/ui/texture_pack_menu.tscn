@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://cdhigibyo7x7f"]
+
+[ext_resource type="Script" uid="uid://dp3dxblch52ng" path="res://scripts/texture_pack_menu.gd" id="1_qiw2s"]
+[ext_resource type="Texture2D" uid="uid://bgoe7hn6jg0i5" path="res://assets/textures/Background.png" id="2_3qupb"]
+[ext_resource type="FontFile" uid="uid://drtu3qt32e1mf" path="res://assets/fonts/font.ttf" id="4_wcis5"]
+[ext_resource type="AudioStream" uid="uid://c1epa80pxgs77" path="res://assets/sounds/click.ogg" id="5_71q46"]
+
+[node name="texture_pack_menu" type="Node2D" unique_id=1895633997]
+position = Vector2(-1, 0)
+script = ExtResource("1_qiw2s")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1911100017]
+offset_right = 1921.7778
+offset_bottom = 1081.0
+texture = ExtResource("2_3qupb")
+expand_mode = 3
+
+[node name="button_manager" type="Control" parent="." unique_id=548551827]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="default_pack" type="Button" parent="button_manager" unique_id=456627945]
+layout_mode = 0
+offset_left = 1106.0
+offset_top = 310.0
+offset_right = 1901.0
+offset_bottom = 450.0
+theme_override_fonts/font = ExtResource("4_wcis5")
+theme_override_font_sizes/font_size = 40
+text = "Default Pack (can't be disabled)"
+
+[node name="back" type="Button" parent="button_manager" unique_id=1577372289]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 800.0
+offset_right = 1090.0
+offset_bottom = 940.0
+theme_override_fonts/font = ExtResource("4_wcis5")
+theme_override_font_sizes/font_size = 64
+text = "Back
+"
+
+[node name="pack2" type="Button" parent="button_manager" unique_id=664503662]
+layout_mode = 0
+offset_left = 1106.0
+offset_top = 158.0
+offset_right = 1901.0
+offset_bottom = 298.0
+theme_override_fonts/font = ExtResource("4_wcis5")
+theme_override_font_sizes/font_size = 40
+text = "My Very Cool Pack 2"
+
+[node name="pack3" type="Button" parent="button_manager" unique_id=994671923]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 158.0
+offset_right = 845.0
+offset_bottom = 298.0
+theme_override_fonts/font = ExtResource("4_wcis5")
+theme_override_font_sizes/font_size = 40
+text = "My Very Cool Pack"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1333603836]
+stream = ExtResource("5_71q46")
+
+[node name="diabled_packs" type="RichTextLabel" parent="." unique_id=972270711]
+offset_left = 50.0
+offset_top = 68.0
+offset_right = 826.0
+offset_bottom = 164.0
+theme_override_fonts/normal_font = ExtResource("4_wcis5")
+theme_override_font_sizes/normal_font_size = 50
+text = "Disabled Resource Packs"
+
+[node name="enabled_packs" type="RichTextLabel" parent="." unique_id=759351348]
+offset_left = 1106.0
+offset_top = 68.0
+offset_right = 1882.0
+offset_bottom = 164.0
+theme_override_fonts/normal_font = ExtResource("4_wcis5")
+theme_override_font_sizes/normal_font_size = 50
+text = "Enabled Resource Packs"
+
+[node name="Label" type="Label" parent="." unique_id=1271940390]
+offset_left = 167.0
+offset_top = 573.0
+offset_right = 1699.0
+offset_bottom = 625.0
+theme_override_fonts/font = ExtResource("4_wcis5")
+theme_override_font_sizes/font_size = 32
+text = "You currently cannot import any texture packs isnce they didn't get added yet..."
+
+[connection signal="pressed" from="button_manager/back" to="." method="_on_back_pressed"]
