@@ -3,6 +3,7 @@ extends Node
 var VERSION = ProjectSettings.get_setting("application/config/version")
 var os_name = OS.get_name()
 var debug = OS.is_debug_build()
+var player_color = Color("#0099f6")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

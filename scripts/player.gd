@@ -4,7 +4,7 @@ extends CharacterBody2D
 var SPEED: int = 400.0
 var JUMP_VELOCITY: int = -500.0
 var is_in_water = check_underwater()
-
+@onready var player_color = $CollisionShape2D/ColorRect
 var tilemap: TileMapLayer = null
 
 func _ready() -> void:
@@ -14,6 +14,7 @@ func _ready() -> void:
 			if child is TileMapLayer:
 				tilemap = child
 				break
+	player_color.color = global.player_color
 
 func _physics_process(delta: float) -> void:
 	is_in_water = check_underwater()

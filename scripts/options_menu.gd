@@ -29,3 +29,10 @@ func _on_texture_packs_pressed() -> void:
 	await audio.finished
 	get_tree().change_scene_to_file("res://scenes/ui/texture_pack_menu.tscn")
 	pass # Replace with function body.
+
+
+func _on_skin_change_pressed() -> void:
+	audio.play()
+	await audio.finished
+	get_tree().change_scene_to_file("res://scenes/ui/skin_changer_menu.tscn")
+	pass # Replace with function body.
