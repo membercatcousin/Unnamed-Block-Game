@@ -52,6 +52,16 @@ theme_override_fonts/font = ExtResource("4_ovlcw")
 theme_override_font_sizes/font_size = 40
 text = "Texture Packs"
 
+[node name="skin_change" type="Button" parent="button_manager" unique_id=1315424766]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 368.0
+offset_right = 574.0
+offset_bottom = 508.0
+theme_override_fonts/font = ExtResource("4_ovlcw")
+theme_override_font_sizes/font_size = 40
+text = "Skin Changer"
+
 [node name="physics" type="Button" parent="button_manager" unique_id=1729800720]
 layout_mode = 0
 offset_left = 64.0
@@ -78,5 +88,6 @@ stream = ExtResource("5_gff41")
 
 [connection signal="pressed" from="button_manager/fast" to="." method="_on_fast_pressed"]
 [connection signal="pressed" from="button_manager/texture_packs" to="." method="_on_texture_packs_pressed"]
+[connection signal="pressed" from="button_manager/skin_change" to="." method="_on_skin_change_pressed"]
 [connection signal="pressed" from="button_manager/physics" to="." method="_on_physics_pressed"]
 [connection signal="pressed" from="button_manager/back" to="." method="_on_back_pressed"]

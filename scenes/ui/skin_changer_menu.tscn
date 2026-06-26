@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://pjtl2glsehx1"]
+
+[ext_resource type="Script" uid="uid://dm51ttr65qs1v" path="res://scripts/skin_changer_menu.gd" id="1_e2gli"]
+[ext_resource type="Texture2D" uid="uid://bgoe7hn6jg0i5" path="res://assets/textures/Background.png" id="2_qsloi"]
+[ext_resource type="Texture2D" uid="uid://bivihtrxqe3dt" path="res://assets/textures/logo.png" id="3_07c6o"]
+[ext_resource type="FontFile" uid="uid://drtu3qt32e1mf" path="res://assets/fonts/font.ttf" id="4_e3nrv"]
+[ext_resource type="AudioStream" uid="uid://c1epa80pxgs77" path="res://assets/sounds/click.ogg" id="5_34hay"]
+
+[node name="options_menu" type="Node2D" unique_id=1895633997]
+position = Vector2(-1, 0)
+script = ExtResource("1_e2gli")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1911100017]
+offset_right = 1921.7778
+offset_bottom = 1081.0
+texture = ExtResource("2_qsloi")
+expand_mode = 3
+
+[node name="logo" type="TextureRect" parent="TextureRect" unique_id=1899492642]
+layout_mode = 0
+offset_left = 812.8999
+offset_top = 200.0
+offset_right = 1720.0
+offset_bottom = 617.0
+texture = ExtResource("3_07c6o")
+stretch_mode = 4
+
+[node name="button_manager" type="Control" parent="." unique_id=548551827]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="back" type="Button" parent="button_manager" unique_id=1577372289]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 800.0
+offset_right = 1090.0
+offset_bottom = 940.0
+theme_override_fonts/font = ExtResource("4_e3nrv")
+theme_override_font_sizes/font_size = 64
+text = "Back
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1333603836]
+stream = ExtResource("5_34hay")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1011501385]
+offset_left = 89.0
+offset_top = 361.0
+offset_right = 207.0
+offset_bottom = 611.0
+color = Color(0, 0.6, 0.9647059, 1)
+
+[node name="Label" type="Label" parent="." unique_id=2079185128]
+offset_left = 124.0
+offset_top = 199.0
+offset_right = 678.0
+offset_bottom = 251.0
+theme_override_fonts/font = ExtResource("4_e3nrv")
+theme_override_font_sizes/font_size = 32
+text = "Change your player's color."
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="." unique_id=2112521662]
+offset_left = 410.0
+offset_top = 378.0
+offset_right = 572.8253
+offset_bottom = 529.0
+color = Color(0, 0.6, 0.9647059, 1)
+
+[connection signal="pressed" from="button_manager/back" to="." method="_on_back_pressed"]
+[connection signal="color_changed" from="ColorPickerButton" to="." method="_on_color_picker_button_color_changed"]
