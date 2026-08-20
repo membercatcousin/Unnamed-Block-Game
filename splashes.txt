@@ -13,6 +13,7 @@ Looks like you need A J#B!
 Hello, i'm your neighbor!
 sudo pacman -S players
 Probably works on your machine!
+This text is a paid actor.
 Optimized because 16GB costs a kidney!
 hjsakldfhl!
 DDR3? More like DDR-Weeee!
@@ -37,3 +38,8 @@ Warning: May cause sudden urge to touch grass!
 Less bloated than systemd!
 Faster than your GNOME's settings menu!
 Free as in freedom, and also as in $0
+Why fall in love when you can just fall down the stairs?
+You are not lazy, you are just motivated to do nothing!
+The cake is a lie. But this splash text isn't!
+Git gud, or just git commit!
+No developer was harmed during the making of this game!
