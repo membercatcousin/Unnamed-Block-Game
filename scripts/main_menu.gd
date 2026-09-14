@@ -6,7 +6,7 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	ver_lable.text = "Preview %s" % global.VERSION
+	ver_lable.text = "Beta %s" % global.VERSION
 	if global.debug == false:
 		debug.hide()
 	pass # Replace with function body.

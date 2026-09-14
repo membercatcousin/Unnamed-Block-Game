@@ -164,7 +164,7 @@ position = Vector2(151, 611)
 scale = Vector2(6.5111113, 6.5111113)
 texture_normal = ExtResource("1_v1nbm")
 texture_pressed = ExtResource("1_v1nbm")
-action = "right"
+action = "left"
 visibility_mode = 1
 
 [node name="UP" type="TouchScreenButton" parent="CanvasLayer" unique_id=1423041615]
