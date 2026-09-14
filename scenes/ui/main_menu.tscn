@@ -56,6 +56,17 @@ theme_override_font_sizes/font_size = 64
 text = "Exit game
 "
 
+[node name="debug_button" type="Button" parent="button_manager" unique_id=1782181934]
+layout_mode = 0
+offset_left = 1514.0
+offset_top = 865.0
+offset_right = 1874.6428
+offset_bottom = 964.0
+theme_override_fonts/font = ExtResource("3_8g5eo")
+theme_override_font_sizes/font_size = 32
+text = "DEBUG
+"
+
 [node name="logo" type="TextureRect" parent="." unique_id=1636574521]
 offset_left = 812.8999
 offset_top = 200.0
@@ -133,4 +144,5 @@ script = ExtResource("8_877pj")
 [connection signal="pressed" from="button_manager/play_button" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="button_manager/options_button" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="button_manager/exit_button" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="button_manager/debug_button" to="." method="_on_debug_button_pressed"]
 [connection signal="pressed" from="labels/CopyrightLabel/Button" to="labels/CopyrightLabel/Button" method="_on_pressed"]

@@ -150,3 +150,19 @@ offset_right = 1914.0
 offset_bottom = 380.0
 theme_override_fonts/font = ExtResource("2_v5584")
 theme_override_font_sizes/font_size = 32
+
+[node name="right" type="TouchScreenButton" parent="." unique_id=944285525]
+position = Vector2(439, 611)
+scale = Vector2(6.5111113, 6.5111113)
+texture_normal = ExtResource("3_alcj5")
+texture_pressed = ExtResource("3_alcj5")
+action = "right"
+visibility_mode = 1
+
+[node name="left" type="TouchScreenButton" parent="." unique_id=1235503923]
+position = Vector2(151, 611)
+scale = Vector2(6.5111113, 6.5111113)
+texture_normal = ExtResource("1_v1nbm")
+texture_pressed = ExtResource("1_v1nbm")
+action = "right"
+visibility_mode = 1

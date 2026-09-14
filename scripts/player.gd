@@ -41,6 +41,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
+
 	# Swim/Fly mechanics
 	if is_in_water == true:
 		if Input.is_action_just_pressed("ui_jump"):
@@ -68,6 +69,10 @@ func _physics_process(delta: float) -> void:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 		
 	move_and_slide()
+
+func _on_JUMP_pressed() -> void:
+	if is_on_floor():
+		velocity.y = JUMP_VELOCITY
 
 func check_underwater() -> bool:
 	var in_water = true
