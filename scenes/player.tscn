@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://caemy1jsqqr5" path="res://scripts/player.gd" id="1_3vyb7"]
 [ext_resource type="PackedScene" uid="uid://rp3pgslgysup" path="res://scenes/tooltips.tscn" id="2_g2els"]
-[ext_resource type="FontFile" uid="uid://drtu3qt32e1mf" path="res://assets/fonts/font.ttf" id="3_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8vuu"]
 size = Vector2(118, 247.5)
@@ -41,15 +40,3 @@ offset_left = -964.0
 offset_top = -664.75
 offset_right = 960.0
 offset_bottom = 419.25
-
-[node name="jump" type="Button" parent="CollisionShape2D/mobile_controls" unique_id=1466699181]
-layout_mode = 0
-offset_left = 1430.0
-offset_top = 623.0
-offset_right = 1707.0
-offset_bottom = 778.0
-theme_override_fonts/font = ExtResource("3_qhqgy")
-theme_override_font_sizes/font_size = 64
-text = "JUMP"
-
-[connection signal="pressed" from="CollisionShape2D/mobile_controls/jump" to="." method="_on_JUMP_pressed"]

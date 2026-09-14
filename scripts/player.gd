@@ -70,10 +70,6 @@ func _physics_process(delta: float) -> void:
 		
 	move_and_slide()
 
-func _on_JUMP_pressed() -> void:
-	if is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
 func check_underwater() -> bool:
 	var in_water = true
 	

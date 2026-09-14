@@ -151,7 +151,7 @@ offset_bottom = 380.0
 theme_override_fonts/font = ExtResource("2_v5584")
 theme_override_font_sizes/font_size = 32
 
-[node name="right" type="TouchScreenButton" parent="." unique_id=944285525]
+[node name="right" type="TouchScreenButton" parent="CanvasLayer" unique_id=944285525]
 position = Vector2(439, 611)
 scale = Vector2(6.5111113, 6.5111113)
 texture_normal = ExtResource("3_alcj5")
@@ -159,10 +159,18 @@ texture_pressed = ExtResource("3_alcj5")
 action = "right"
 visibility_mode = 1
 
-[node name="left" type="TouchScreenButton" parent="." unique_id=1235503923]
+[node name="left3" type="TouchScreenButton" parent="CanvasLayer" unique_id=1235503923]
 position = Vector2(151, 611)
 scale = Vector2(6.5111113, 6.5111113)
 texture_normal = ExtResource("1_v1nbm")
 texture_pressed = ExtResource("1_v1nbm")
 action = "right"
+visibility_mode = 1
+
+[node name="UP" type="TouchScreenButton" parent="CanvasLayer" unique_id=1423041615]
+position = Vector2(1525.7778, 739)
+scale = Vector2(3.0222223, 3.0222223)
+texture_normal = ExtResource("5_2425l")
+texture_pressed = ExtResource("5_2425l")
+action = "ui_jump"
 visibility_mode = 1
