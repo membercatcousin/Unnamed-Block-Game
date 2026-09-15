@@ -50,7 +50,7 @@ offset_right = 1130.0
 offset_bottom = 184.0
 theme_override_fonts/font = ExtResource("3_oqgs5")
 theme_override_font_sizes/font_size = 32
-text = "Applemax bkhr (Tester of the game, also shout out to him for beating cancer)"
+text = "Applemax bkhr (Tester of the game)"
 
 [node name="devs_label" type="Label" parent="menu_label" unique_id=522085663]
 layout_mode = 0
