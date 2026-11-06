@@ -18,6 +18,17 @@ offset_bottom = 1081.0
 texture = ExtResource("2_q85j6")
 expand_mode = 3
 
+[node name="EditionLabel" type="Label" parent="TextureRect" unique_id=796498046]
+layout_mode = 0
+offset_left = 813.0
+offset_top = 437.0
+offset_right = 1393.0
+offset_bottom = 541.0
+theme_override_colors/font_color = Color(3.3691526e-06, 0.46741235, 0, 1)
+theme_override_fonts/font = ExtResource("3_8g5eo")
+theme_override_font_sizes/font_size = 64
+text = "Android edition"
+
 [node name="button_manager" type="Control" parent="." unique_id=1564158108]
 layout_mode = 3
 anchors_preset = 0
@@ -32,7 +43,7 @@ offset_right = 590.0
 offset_bottom = 370.0
 theme_override_fonts/font = ExtResource("3_8g5eo")
 theme_override_font_sizes/font_size = 64
-text = "Play"
+text = "MAIN_PLAY"
 
 [node name="options_button" type="Button" parent="button_manager" unique_id=1691896215]
 layout_mode = 0
@@ -42,8 +53,7 @@ offset_right = 590.0
 offset_bottom = 520.0
 theme_override_fonts/font = ExtResource("3_8g5eo")
 theme_override_font_sizes/font_size = 64
-text = "Options
-"
+text = "MAIN_OPTIONS"
 
 [node name="minigames_button" type="Button" parent="button_manager" unique_id=1949984388]
 visible = false
@@ -65,8 +75,7 @@ offset_right = 590.0
 offset_bottom = 670.0
 theme_override_fonts/font = ExtResource("3_8g5eo")
 theme_override_font_sizes/font_size = 64
-text = "Exit game
-"
+text = "MAIN_QUIT"
 
 [node name="debug_button" type="Button" parent="button_manager" unique_id=1782181934]
 layout_mode = 0

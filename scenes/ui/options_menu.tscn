@@ -25,6 +25,17 @@ offset_bottom = 617.0
 texture = ExtResource("3_hb1yv")
 stretch_mode = 4
 
+[node name="EditionLabel" type="Label" parent="TextureRect" unique_id=359287095]
+layout_mode = 0
+offset_left = 813.0
+offset_top = 437.0
+offset_right = 1393.0
+offset_bottom = 541.0
+theme_override_colors/font_color = Color(3.3691526e-06, 0.46741235, 0, 1)
+theme_override_fonts/font = ExtResource("4_ovlcw")
+theme_override_font_sizes/font_size = 64
+text = "Android edition"
+
 [node name="button_manager" type="Control" parent="." unique_id=548551827]
 layout_mode = 3
 anchors_preset = 0
@@ -39,7 +50,7 @@ offset_right = 574.0
 offset_bottom = 204.0
 theme_override_fonts/font = ExtResource("4_ovlcw")
 theme_override_font_sizes/font_size = 40
-text = "Be Fast: ON"
+text = "OPT_FAST"
 
 [node name="texture_packs" type="Button" parent="button_manager" unique_id=456627945]
 visible = false
@@ -60,7 +71,29 @@ offset_right = 574.0
 offset_bottom = 508.0
 theme_override_fonts/font = ExtResource("4_ovlcw")
 theme_override_font_sizes/font_size = 40
-text = "Skin Changer"
+text = "OPT_SKIN"
+
+[node name="language" type="Button" parent="button_manager" unique_id=316917256]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 519.0
+offset_right = 574.0
+offset_bottom = 659.0
+theme_override_fonts/font = ExtResource("4_ovlcw")
+theme_override_font_sizes/font_size = 40
+text = "OPT_LANG"
+
+[node name="controls" type="Button" parent="button_manager" unique_id=239016975]
+visible = false
+layout_mode = 0
+offset_left = 64.0
+offset_top = 368.0
+offset_right = 574.0
+offset_bottom = 508.0
+theme_override_fonts/font = ExtResource("4_ovlcw")
+theme_override_font_sizes/font_size = 40
+text = "RAAAAAAAAAAHHH
+Controls"
 
 [node name="physics" type="Button" parent="button_manager" unique_id=1729800720]
 layout_mode = 0
@@ -70,7 +103,7 @@ offset_right = 574.0
 offset_bottom = 356.0
 theme_override_fonts/font = ExtResource("4_ovlcw")
 theme_override_font_sizes/font_size = 40
-text = "Legacy Physics: OFF"
+text = "OPT_PHYS_OFF"
 
 [node name="back" type="Button" parent="button_manager" unique_id=1577372289]
 layout_mode = 0
@@ -89,5 +122,7 @@ stream = ExtResource("5_gff41")
 [connection signal="pressed" from="button_manager/fast" to="." method="_on_fast_pressed"]
 [connection signal="pressed" from="button_manager/texture_packs" to="." method="_on_texture_packs_pressed"]
 [connection signal="pressed" from="button_manager/skin_change" to="." method="_on_skin_change_pressed"]
+[connection signal="pressed" from="button_manager/language" to="." method="_on_language_pressed"]
+[connection signal="pressed" from="button_manager/controls" to="." method="_on_skin_change_pressed"]
 [connection signal="pressed" from="button_manager/physics" to="." method="_on_physics_pressed"]
 [connection signal="pressed" from="button_manager/back" to="." method="_on_back_pressed"]

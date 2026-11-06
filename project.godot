@@ -66,6 +66,10 @@ ui_jump={
 ]
 }
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://lang.en.translation", "res://lang.fr.translation", "res://lang.ro.translation", "res://lang.es.translation")
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

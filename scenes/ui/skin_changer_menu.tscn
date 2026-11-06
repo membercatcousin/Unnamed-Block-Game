@@ -25,6 +25,17 @@ offset_bottom = 617.0
 texture = ExtResource("3_07c6o")
 stretch_mode = 4
 
+[node name="EditionLabel" type="Label" parent="TextureRect" unique_id=1988532340]
+layout_mode = 0
+offset_left = 813.0
+offset_top = 437.0
+offset_right = 1393.0
+offset_bottom = 541.0
+theme_override_colors/font_color = Color(3.3691526e-06, 0.46741235, 0, 1)
+theme_override_fonts/font = ExtResource("4_e3nrv")
+theme_override_font_sizes/font_size = 64
+text = "Android edition"
+
 [node name="button_manager" type="Control" parent="." unique_id=548551827]
 layout_mode = 3
 anchors_preset = 0
@@ -55,11 +66,11 @@ color = Color(0, 0.6, 0.9647059, 1)
 [node name="Label" type="Label" parent="." unique_id=2079185128]
 offset_left = 124.0
 offset_top = 199.0
-offset_right = 678.0
+offset_right = 1684.0
 offset_bottom = 251.0
 theme_override_fonts/font = ExtResource("4_e3nrv")
 theme_override_font_sizes/font_size = 32
-text = "Change your player's color."
+text = "SKIN_TEXT"
 
 [node name="ColorPickerButton" type="ColorPickerButton" parent="." unique_id=2112521662]
 offset_left = 410.0

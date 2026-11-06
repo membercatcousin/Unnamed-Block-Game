@@ -1,0 +1,14 @@
+id,en,fr,ro,es
+Back,Back,Retour,Înapoi,Atrás
+MAIN_PLAY,Play,Jouer,Joacă,Jugar
+MAIN_OPTIONS,Options,Options,Setări,Opciones
+MAIN_QUIT,Exit Game,Quitter le jeu,Ieși din joc,Dejar el juego
+PLAY_CREATE_WORLD,Create new world,Créer un nouveau monde,Creează lume nouă,Crear un mundo nuevo
+PLAY_CREATE_TUTORIAL,Create new tutorial world,Créer un nouveau monde tutoriel,Creează lume de tutorial,Crear un mundo nuevo tutorial
+OPT_FAST,Be Fast: ON,Être rapide: OUI,Fii rapid: DA,Ser rápido: SÍ,Ser rápido: SÍ
+OPT_PHYS_ON,Legacy Physics: ON,Physique classique: OUI,Fizică clasică: DA,Física clásica: SÍ
+OPT_PHYS_OFF,Legacy Physics: OFF,Physique classique: NON,Fizică clasică: NU,Física clásica: NO
+OPT_SKIN,Skin Changer,Changer de skin,Schimbare skin,El cambiador de skin
+OPT_LANG,Languages,Langues,Limbi,Idiomas
+SKIN_TEXT,Change your player's color.,Changez la couleur de votre personnage.,Schimbă culoarea personajului,Cambie el color de su jugador
+LANG_TEXT,Languages:,Langues:,Limbi:,Idioma:
